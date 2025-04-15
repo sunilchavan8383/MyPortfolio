@@ -1,0 +1,86 @@
+.quote-pg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  padding-top: 5rem;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: #ffffff;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.quote-text {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+.quote-but {
+  background: #9c27b0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.quote-but:hover {
+  background: #e03c4a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .quote-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .quote-text {
+    font-size: 20px;
+  }
+
+  .quote-but {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote-container {
+    width: 80%;
+  
+  }
+
+  .quote-text {
+    font-size: 18px;
+  }
+
+  .quote-but {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  .quote-pg {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+}

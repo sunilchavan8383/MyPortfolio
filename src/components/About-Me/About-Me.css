@@ -1,0 +1,229 @@
+/* Main Container */
+.abt-pg1-Container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+/* Header Section */
+.abt-text {
+  margin-top: 70px;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0e1f51;
+  text-align: center;
+  padding: 20px;
+}
+a {
+  text-decoration: none;
+}
+
+.abt-title {
+  text-decoration: none;
+}
+
+.abt-head {
+  color: #ff3e54;
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 700;
+}
+
+.abt-text div:nth-child(2) {
+  color: white;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+/* Services Section */
+
+/* Content Wrapper */
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* Image Box */
+.image-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-box img {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 15px;
+}
+
+/* Text Content */
+.text-content {
+  flex: 1;
+  text-align: left;
+  max-width: 800px;
+}
+
+.highlight-text {
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #9c27b0;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.main-heading {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1d3557;
+  margin-bottom: 15px;
+}
+
+.info-text {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Advice Container */
+.advice-container {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+.advice-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-right: 1rem;
+}
+
+.abt-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Title and Help Text */
+.abt-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin: 0;
+  text-decoration: none !important;
+}
+
+.help-text {
+  font-size: 16px;
+  color: #666;
+  margin: 4px 0 0;
+}
+
+.phone-number {
+  color: #ff3b3b;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content {
+    text-align: center;
+  }
+
+  .advice-container {
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .image-box img {
+    width: 90%;
+
+    border-radius: 15px;
+  }
+  .info-text {
+    padding: 2rem;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .abt-head {
+    font-size: 35px;
+  }
+
+  .main-heading {
+    font-size: 24px;
+  }
+
+  .info-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .abt-pg1-Container {
+    width: 100%;
+    height: 100vh;
+
+    padding-top: 5rem;
+  }
+
+  .abt-text {
+    height: auto;
+    padding: 40px 20px;
+  }
+  .services-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .abt-head {
+    font-size: 30px;
+  }
+
+  .abt-text div:nth-child(2) {
+    font-size: 16px;
+  }
+
+  .main-heading {
+    font-size: 22px;
+  }
+
+  .info-text {
+    font-size: 14px;
+  }
+
+  .advice-container {
+    flex-direction: row;
+    text-align: center;
+    height: 30%;
+    justify-content: space-around;
+    width: 70%;
+  }
+
+  .phone-number {
+    font-size: 14px;
+  }
+}

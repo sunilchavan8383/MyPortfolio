@@ -1,0 +1,33 @@
+.Icon {
+    position: relative;
+    transform: translateX(84%);
+  }
+  
+  .Icon img {
+    height: 100%;
+    max-height: 650px;
+    width: auto; /* Ensure the image maintains its aspect ratio */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .Icon {
+      transform: translateX(70%); /* Reduce the translation on smaller screens */
+    }
+  
+    .Icon img {
+      max-height: 500px; /* Reduce max-height for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Icon {
+      position: absolute;
+      transform: translateX(5%); /* Further reduce the translation for mobile */
+    }
+  
+    .Icon img {
+      max-height: 400px; /* Further reduce max-height for mobile */
+    }
+  }
+  

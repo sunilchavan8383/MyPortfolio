@@ -1,0 +1,167 @@
+.Experience-Container {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 2rem;
+}
+.exp-buts {
+  display: flex;
+  gap: 5%;
+  align-items: center;
+}
+.exp-photo img {
+  display: none;
+}
+
+.Experience-txt,
+.Experience-txtof2 {
+  text-align: left;
+  color: rgb(49, 49, 49);
+  max-width: 500px;
+}
+.Experience-txt {
+  padding-left: 3rem;
+}
+.Experience-txtof2 {
+  padding-top: 10rem;
+}
+.Experience-txt1 {
+  padding-bottom: 1rem;
+  color: #9c27b0;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.Experience-txt2 {
+  padding-bottom: 1.5rem;
+  font-size: 18px;
+  width: 100%;
+}
+
+.Experience-txt3,
+.Experience-txt4 {
+  font-size: 14px;
+  padding-bottom: 1rem;
+  color: rgb(55, 55, 55);
+  line-height: 1.6;
+}
+
+.Experience-img img {
+  max-width: 100%;
+  height: auto;
+  padding-top: 6rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .Experience-Container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .Experience-txt,
+  .Experience-txtof2 {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .Experience-txt1 {
+    font-size: 28px;
+  }
+
+  .Experience-txt2 {
+    font-size: 16px;
+  }
+
+  .Experience-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Experience-Container {
+    gap: 1rem;
+  }
+
+  .Experience-txt1 {
+    font-size: 24px;
+  }
+
+  .Experience-txt2 {
+    font-size: 15px;
+  }
+
+  .Experience-txt3,
+  .Experience-txt4 {
+    font-size: 13px;
+  }
+
+  .See-Website1 {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Experience-txt1 {
+    font-size: 22px;
+  }
+  .Experience-Container {
+    padding: 0px;
+  }
+  .exp-photo img {
+    display: block; /* Ensure the image is displayed */
+    justify-self: center;
+    height: 280px;
+    width: 300px;
+    border-radius: 20px;
+    padding-bottom: 10px;
+  }
+  .Experience-txt {
+    padding-left: 0px;
+    padding-bottom: 1rem;
+    padding-top: 3rem;
+  }
+
+  .Experience-txt2 {
+    font-size: 14px;
+  }
+  .Experience-txt,
+  .Experience-txtof2 {
+    text-align: center;
+  }
+  .Experience-txt3,
+  .Experience-txt4 {
+    font-size: 12px;
+  }
+  .Experience-txtof2 {
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+  .See-Websiteof1 {
+    font-size: 12px;
+    padding: 8px 12px;
+    display: flex;
+    justify-self: center;
+  }
+  .Experience-img img {
+    display: none;
+  }
+  .exp-buts {
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    justify-content: center;
+  }
+}

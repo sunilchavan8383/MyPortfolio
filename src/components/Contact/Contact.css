@@ -1,0 +1,178 @@
+.contactContainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  flex-direction: row;
+  gap: 3%;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  padding-bottom: 2rem;
+}
+
+.earth img {
+  height: 500px;
+  width: 500px;
+  animation: rotateEarth 30s linear infinite;
+}
+
+@keyframes rotateEarth {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.contact {
+  color: white;
+  text-align: left;
+  width: 90%; /* Adjust width for smaller screens */
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+}
+
+.contactt01 {
+  color: #9c27b0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.contactt1 {
+  font-size: 24px;
+  color: rgb(72, 72, 72);
+}
+
+.contactt2 {
+  font-size: 18px;
+  color: rgb(135, 135, 135);
+}
+
+.contactt3 {
+  font-size: 16px;
+  color: rgb(135, 135, 135);
+}
+
+.contactt4 {
+  font-size: 14px;
+  color: rgb(135, 135, 135);
+}
+
+.contactform {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactform input {
+  width: 100%; /* Adjusted width to 100% for responsiveness */
+  max-width: 400px;
+  margin-bottom: 3%;
+  height: 40px;
+  border-radius: 15px;
+  border: 0px;
+  outline: none;
+  background-color: #d9d9d9;
+  padding-left: 1rem;
+}
+
+.contactform form {
+  padding-top: 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactform input::placeholder {
+  color: rgb(29, 29, 29);
+  font-family: "Poppins", sans-serif;
+}
+
+#input1 {
+  text-align: center;
+  width: 50%; /* Adjusted width for responsiveness */
+  max-width: 200px;
+  color: white;
+  background-color: #9c27b0;
+}
+
+.contactform button {
+  height: 40px;
+  border-radius: 15px;
+  border: 0px;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  cursor: pointer;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .contactContainer {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .earth {
+    height: 300px;
+    width: 300px;
+  }
+
+  .contact {
+    width: 90%;
+    text-align: center;
+  }
+
+  .contactt1,
+  .contactt2,
+  .contactt3,
+  .contactt4 {
+    font-size: 16px;
+  }
+
+  .contactform input {
+    width: 90%;
+  }
+
+  #input1 {
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactContainer {
+    height: 100vh;
+    padding-bottom: 0px;
+  }
+  .earth img {
+    height: 280px;
+    width: 280px;
+  }
+
+  .contactt01 {
+    font-size: 22px;
+  }
+
+  .contactt1,
+  .contactt2,
+  .contactt3,
+  .contactt4 {
+    font-size: 14px;
+  }
+
+  .contactform input {
+    height: 35px;
+  }
+
+  .contactform button {
+    height: 35px;
+  }
+  .contactform form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

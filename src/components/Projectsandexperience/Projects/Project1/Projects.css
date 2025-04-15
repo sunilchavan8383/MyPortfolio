@@ -1,0 +1,141 @@
+.Project-Container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 3%;
+}
+
+.Project-txt {
+  width: 45%;
+  text-align: left;
+  color: white;
+}
+
+.Project-txt1 {
+  padding-bottom: 1rem;
+  font-size: 18px;
+  color: rgb(51, 51, 51);
+}
+
+.Project-txt2 {
+  padding-bottom: 1.5rem;
+  font-size: 32px;
+  font-weight: 900;
+  width: 95%;
+  color: #9c27b0;
+}
+
+.Project-txt3,
+.Project-txt4 {
+  width: 85%;
+  padding-bottom: 1rem;
+  color: rgb(103, 103, 103);
+}
+
+.See-Websiteof1 {
+  height: 35px;
+  width: 155px;
+  display: flex;
+  background-color: #9c27b0;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  border: 0px;
+  color: white;
+  font-size: 16px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+.See-Websiteof11 {
+  height: 35px;
+  width: 155px;
+  display: flex;
+  background-color: #9c27b0;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  border: 0px;
+  color: white;
+  font-size: 16px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+.Project-buts {
+  display: flex;
+  padding-top: 1rem;
+  flex-direction: row;
+  gap: 2%;
+}
+
+.Project-img {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Project-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .Project-Container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Project-txt {
+    width: 90%;
+  }
+
+  .Project-txt2 {
+    font-size: 28px;
+  }
+
+  .Project-buts {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .Project-txt {
+    width: 100%;
+  }
+
+  .Project-txt2 {
+    font-size: 24px;
+  }
+
+  .See-Website1 {
+    width: 140px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Project-txt2 {
+    font-size: 20px;
+  }
+  .Project-txt {
+    text-align: center;
+  }
+
+  .See-Websiteof1 {
+    width: 130px;
+    font-size: 12px;
+  }
+
+  .See-Websiteof11 {
+    width: 130px;
+    font-size: 12px;
+  }
+
+  .Project-txt3,
+  .Project-txt4 {
+    width: 100%;
+  }
+}

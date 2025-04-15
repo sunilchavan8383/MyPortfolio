@@ -1,0 +1,129 @@
+.project3-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 3%;
+}
+
+.project3-text {
+  width: 45%;
+  text-align: left;
+  color: white;
+}
+
+.project3-title {
+  padding-bottom: 1rem;
+  font-size: 18px;
+  color: rgb(51, 51, 51);
+}
+
+.project3-subtitle {
+  padding-bottom: 1.5rem;
+  font-size: 32px;
+  font-weight: 900;
+  width: 95%;
+  color: #9c27b0;
+}
+
+.project3-description,
+.project3-tech {
+  width: 85%;
+  padding-bottom: 1rem;
+  color: rgb(103, 103, 103);
+}
+
+.project3-btn {
+  height: 35px;
+  width: 155px;
+  display: flex;
+  background-color: #9c27b0;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  border: 0px;
+  color: white;
+  font-size: 16px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+.project3-buttons {
+  display: flex;
+  padding-top: 1rem;
+  flex-direction: row;
+  gap: 2%;
+}
+
+.project3-img {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.project3-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .project3-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project3-text {
+    width: 90%;
+  }
+
+  .project3-subtitle {
+    font-size: 28px;
+  }
+
+  .project3-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .project3-text {
+    width: 100%;
+  }
+
+  .project3-subtitle {
+    font-size: 24px;
+  }
+
+  .project3-btn {
+    width: 140px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project3-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .project3-subtitle {
+    font-size: 20px;
+  }
+
+  .project3-text {
+    text-align: center;
+  }
+
+  .project3-btn {
+    width: 130px;
+    font-size: 12px;
+  }
+
+  .project3-description,
+  .project3-tech {
+    width: 100%;
+  }
+}

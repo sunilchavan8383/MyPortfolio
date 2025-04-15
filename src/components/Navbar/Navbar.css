@@ -1,0 +1,127 @@
+.Nav {
+    position: relative;
+    display: flex;
+    gap: 4%;
+    align-items: center;
+
+    justify-content: end;
+    padding-right:2rem;
+  }
+  .Navbar .Nav a {
+    cursor: pointer; /* Make links clickable */
+
+    text-decoration: none;
+    
+  }
+  .Nav a {
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .Navbar {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: 1fr;
+  
+    grid-template-columns: 1fr 5fr;
+    gap: 6%;
+
+   background-color: #ac2ac3;
+   position:fixed;
+   z-index:1001;
+  }
+  /* General styles */
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers the logo vertically */
+    width: 100%; /* Takes full width */
+    padding: 12px; /* Adds some spacing */
+  }
+  
+  #NavImg {
+    max-width: 70%; /* Ensures the image doesn't exceed the container width */
+    height: auto; /* Maintains aspect ratio */
+    padding-left: 2rem;
+  }
+  #contact {
+    padding-right: 4rem;
+  }
+  @media (max-width: 768px) {
+    .Nav {
+      position: relative;
+      display: flex;
+      gap: 12%;
+      align-items: center;
+     
+      justify-content: end;
+    }
+  
+    .Nav a {
+      font-family: "Poppins", sans-serif;
+      text-decoration: none;
+      color: rgb(188, 189, 189);
+      font-size: 18px;
+    
+    }
+    .Navbar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 60%;
+   
+    }
+    #contact {
+      padding-right: 1rem;
+    }
+    .logo {
+      padding: 5px; /* Reduces padding on smaller screens */
+    }
+  
+    #NavImg {
+      max-width: 80%; /* Shrinks the image slightly on smaller screens */
+    }
+  }
+  @media (max-width: 480px) {
+    .Nav {
+      position: relative;
+      display: flex;
+      gap: 3%;
+      align-items: center;
+    padding-right:1rem;
+      justify-content: end;
+    }
+  
+    .Nav a {
+      font-family: "Poppins", sans-serif;
+      text-decoration: none;
+      color: rgb(241, 241, 241);
+      font-size: 11px;
+    }
+    .Navbar {
+      width: 100%;
+      display: grid;
+      grid-template-rows: 1fr;
+     height: 50px;
+      align-items: center;
+      justify-content: center;
+      grid-template-columns: 1fr 5fr;
+      gap: 2%;
+   
+    }
+  
+    #NavImg {
+      max-width: 100%;
+  
+      padding-left: 1rem;
+    }
+    #contact {
+      padding-right: 1rem;
+    }
+  }
+  
